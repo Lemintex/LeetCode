@@ -1,15 +1,8 @@
 package ArraysAndHashing;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class GroupAnagrams {
-
-    public static void main(String[] args) {
-        groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
-    }
-
     // this solution is INCREDIBLY slow on larger data sets (On^2, and is already really slow based on anagram lookup)
     // TODO: make not slow
     public static List<List<String>> groupAnagrams(String[] strings) {
@@ -54,17 +47,38 @@ public class GroupAnagrams {
                 }
             }
             if (!found) {
-                // if no anagram found, add a new group (List) with he word
+                // if no anagram found, add a new group (List) with the word
                 List<String> l = new ArrayList<>();
                 l.add(s);
                 groups.add(l);
 
                 // add the alphabetical array to the comparison list
                 alphabeticalAnagrams.add(copy);
-
-
             }
         }
         return groups;
+    }
+
+    // this solution is much faster (On) as it uses a HashMap for instant anagram lookup
+    public static List<List<String>> groupAnagramsFaster(String[] strings) {
+        // hashmap is used to story groups of anagrams and letter combinations
+        // key is string of alphabetical letters in anagram combination
+        // value is list of every anagram of these letters
+        HashMap<String, List<String>> alphabeticalAnagrams = new HashMap<>();
+
+        // for each string given
+        for (String s : strings) {
+            // sorts string chars alphabetically
+            char[] copy = s.toCharArray();
+            Arrays.sort(copy);
+            String letters = String.valueOf(copy);
+
+            // adds
+            ArrayList<String> lst = (ArrayList<String>) alphabeticalAnagrams.getOrDefault(letters, new ArrayList<>());
+            lst.add(s);
+            alphabeticalAnagrams.putIfAbsent(letters, lst);
+        }
+        // returns a list of every group
+        return new ArrayList<>(alphabeticalAnagrams.values());
     }
 }
