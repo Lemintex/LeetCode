@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Added TopKFrequentElements(347)">
+    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Improved TopKFrequentElements(347): Bucket Search">
+      <change afterPath="$PROJECT_DIR$/src/RandomStuff/AppendZeros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,20 @@
       <recent name="C:\Users\Lemintex\IdeaProjects\LeetCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TopKFrequentElements">
+  <component name="RunManager" selected="Application.AppendZeros">
+    <configuration name="AppendZeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomStuff.AppendZeros" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RandomStuff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArraysAndHashing.GroupAnagrams" />
       <module name="LeetCode" />
@@ -90,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppendZeros" />
         <item itemvalue="Application.TopKFrequentElements" />
         <item itemvalue="Application.GroupAnagrams" />
         <item itemvalue="Application.ValidAnagram" />
@@ -140,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662250157965</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improved TopKFrequentElements(347): Bucket Search">
+      <created>1662255977106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662255977106</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +181,8 @@
     <MESSAGE value="Added TwoSum(1)" />
     <MESSAGE value="Made GroupAnagrams(49) Faster" />
     <MESSAGE value="Added TopKFrequentElements(347)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TopKFrequentElements(347)" />
+    <MESSAGE value="Improved TopKFrequentElements(347): Bucket Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved TopKFrequentElements(347): Bucket Search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,13 +194,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
-          <line>39</line>
+          <line>34</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
-          <line>65</line>
+          <line>60</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RandomStuff/AppendZeros.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
