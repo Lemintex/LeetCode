@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Made GroupAnagrams(49) Faster">
+    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Added TopKFrequentElements(347)">
+      <change afterPath="$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndHashing/GroupAnagrams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +48,22 @@
       <recent name="C:\Users\Lemintex\IdeaProjects\LeetCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroupAnagrams">
+  <component name="RunManager" selected="Application.TopKFrequentElements">
     <configuration name="GroupAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArraysAndHashing.GroupAnagrams" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopKFrequentElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndHashing.TopKFrequentElements" />
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -77,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TopKFrequentElements" />
         <item itemvalue="Application.GroupAnagrams" />
         <item itemvalue="Application.ValidAnagram" />
       </list>
@@ -112,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662082445645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made GroupAnagrams(49) Faster">
+      <created>1662163319709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662163319709</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +152,8 @@
     <MESSAGE value="Added ValidAnagram(242)" />
     <MESSAGE value="Added TwoSum(1)" />
     <MESSAGE value="Made GroupAnagrams(49) Faster" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made GroupAnagrams(49) Faster" />
+    <MESSAGE value="Added TopKFrequentElements(347)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TopKFrequentElements(347)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,6 +162,11 @@
           <url>file://$PROJECT_DIR$/src/ArraysAndHashing/ValidAnagram.java</url>
           <line>50</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
