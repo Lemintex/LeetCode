@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Improved TopKFrequentElements(347): Bucket Search">
-      <change afterPath="$PROJECT_DIR$/src/RandomStuff/AppendZeros.java" afterDir="false" />
+    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Added Interview Question Solutions (my poor performance has been annoying me)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <recent name="C:\Users\Lemintex\IdeaProjects\LeetCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppendZeros">
+  <component name="RunManager" selected="Application.TopKFrequentElements">
     <configuration name="AppendZeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RandomStuff.AppendZeros" />
       <module name="LeetCode" />
@@ -103,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppendZeros" />
         <item itemvalue="Application.TopKFrequentElements" />
+        <item itemvalue="Application.AppendZeros" />
         <item itemvalue="Application.GroupAnagrams" />
         <item itemvalue="Application.ValidAnagram" />
       </list>
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662255977106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Interview Question Solutions (my poor performance has been annoying me)">
+      <created>1662314049921</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662314049921</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +189,8 @@
     <MESSAGE value="Made GroupAnagrams(49) Faster" />
     <MESSAGE value="Added TopKFrequentElements(347)" />
     <MESSAGE value="Improved TopKFrequentElements(347): Bucket Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved TopKFrequentElements(347): Bucket Search" />
+    <MESSAGE value="Added Interview Question Solutions (my poor performance has been annoying me)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Interview Question Solutions (my poor performance has been annoying me)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,18 +202,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
-          <line>34</line>
+          <line>38</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
-          <line>60</line>
+          <line>64</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RandomStuff/AppendZeros.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/ArraysAndHashing/TopKFrequentElements.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

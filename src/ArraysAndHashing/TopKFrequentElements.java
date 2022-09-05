@@ -4,6 +4,10 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class TopKFrequentElements {
+    public static void main(String[] args) {
+        int[] n = new int[] {1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5};
+        int[] ans = topKFrequentPriorityQueue(n, 3);
+    }
     // this algorithm is slow as sorting of hashmap takes a while
     // (sorting could be avoided by using a heap/priority queue?)
     public static int[] topKFrequent(int[] nums, int k) {
@@ -37,7 +41,7 @@ public class TopKFrequentElements {
         return kFrequent;
     }
 
-    // bucket sort algorithm is much faster  (On) and memory efficient (On) due to not requiring any sorting, just utilises data organising and fast hashmaps
+    // bucket sort algorithm is much faster O(n) and memory efficient O(n) due to not requiring any sorting, just utilises data organising and fast hashmaps
     public static int[] topKFrequentImproved(int[] nums, int k) {
         // create array used for storing k most frequent elements
         int[] kFrequent = new int[k];
@@ -75,6 +79,37 @@ public class TopKFrequentElements {
                 }
                 if (index == k) return kFrequent;
             }
+        }
+        return kFrequent;
+    }
+
+    // this solution utilises a priority queue to allow only k elements with the highest priority (frequency) to survive
+    // by taking the root away each iteration beyond k, this ensures k elements with the highest priority remain
+    // this is O(nlogn)
+    public static int[] topKFrequentPriorityQueue(int[] nums, int k) {
+        // create array used for storing k most frequent elements
+        int[] kFrequent = new int[k];
+
+        // hashmap for storing occurrences of elements
+        // K = element
+        // V = occurrence count of that element
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        //for each element in array, count its occurrences
+        for (int n: nums) {
+            int occurrences = map.getOrDefault(n, 0);
+            map.put(n, occurrences + 1);
+        }
+
+        Queue<Integer> priority = new PriorityQueue(Comparator.comparingInt(map::get));
+        for(int o: map.keySet()) {
+            priority.add(o);
+            if (priority.size() > k) {
+                priority.poll();
+            }
+        }
+        for (int i = 0; i < k; i++) {
+            kFrequent[i] = priority.poll();
         }
         return kFrequent;
     }
