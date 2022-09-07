@@ -23,4 +23,34 @@ public class ProductOfArrayExceptSelf {
         }
         return nums;
     }
+
+    // essentially the same as the previous solution, but replaces an array with an extra loop to calculate the postfixes seperately
+    public static int[] productExceptSelfImproved(int[] nums) {
+        // stores the results to return
+        int[] results = new int[nums.length];
+
+        // tracks the prefix being calculated
+        int prefix = 1;
+
+        // store the prefix calculated thus far in results[i] and calculate the prefix for the next number
+        for (int i = 0; i < nums.length; i++) {
+            results[i] = prefix;
+            prefix *= nums[i];
+        }
+
+        // tracks the postfix being calculated
+        int postfix = 1;
+
+        // multiply the stored prefix by the calculated postfix and calculate the postfix for the next (previous in terms of index) number
+        for (int i = nums.length - 1; i >= 0; i--) {
+            results[i] *= postfix;
+            postfix *= nums[i];
+        }
+        return results;
+    }
 }
+
+/*
+    5 6 7 8
+pre 1
+ */
