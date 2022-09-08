@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Added Improved Solution to ValidSudoku(36)">
-      <change afterPath="$PROJECT_DIR$/src/ArraysAndHashing/LongestConsecutiveSequence.java" afterDir="false" />
+    <list default="true" id="25cf8f94-be5c-4188-b8b0-7580758b520f" name="Changes" comment="Added LongestConsecutiveSequence(128)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndHashing/LongestConsecutiveSequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662599328422</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added LongestConsecutiveSequence(128)">
+      <created>1662606299747</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662606299747</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +244,8 @@
     <MESSAGE value="Added Different Solution to ProductOfArrayExceptSelf(238)" />
     <MESSAGE value="Added ValidSudoku(36)" />
     <MESSAGE value="Added Improved Solution to ValidSudoku(36)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Improved Solution to ValidSudoku(36)" />
+    <MESSAGE value="Added LongestConsecutiveSequence(128)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added LongestConsecutiveSequence(128)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
