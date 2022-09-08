@@ -57,4 +57,54 @@ public class ValidSudoku {
         }
         return true;
     }
+
+
+    // this solution simply re-uses the row hashset instead of creating one for each row
+    // this is only possible as we are iterating row by row; the other two lists of sets are needed
+    public boolean isValidSudokuImproved(char[][] board) {
+        // hashset for storing the numbers in the current row
+        HashSet<Integer> row = new HashSet<>();
+
+        // lists of hashsets for storing the numbers in each column and box
+        ArrayList<HashSet<Integer>> columns = new ArrayList<>();
+        ArrayList<ArrayList<HashSet<Integer>>> boxes = new ArrayList<>();
+
+        // store this for easier re-use
+        int boardSize = board.length;
+
+        // create hashsets to store each column
+        for (int i = 0; i < boardSize; i++) {
+            columns.add(new HashSet<>());
+        }
+
+        // create hashsets to store each box
+        for (int i = 0; i < boardSize / 3; i++) {
+            boxes.add(new ArrayList<>());
+            for (int j = 0; j < boardSize / 3; j++) {
+                boxes.get(i).add(new HashSet<>());
+            }
+        }
+
+        // loop over every value on the board
+        for (int i = 0; i < boardSize; i++) {
+
+            // empty the row hashset as we are now on a new row
+            row.clear();
+            for (int j = 0; j < boardSize; j++) {
+                int number;
+
+                // if the square is not empty
+                if (board[i][j] >= '1' && board[i][j] <= '9') {
+                    number = board[i][j] - '0';
+
+                    //ensure it is the only occurrence in the row, column, and box
+                    if (!row.add(number) ||
+                            !columns.get(j).add(number) ||
+                            !boxes.get(i / 3).get(j / 3).add(number)) return false;
+                }
+            }
+        }
+        return true;
+    }
+
 }
