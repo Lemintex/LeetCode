@@ -19,19 +19,16 @@ public class MinimumEnrgyToFinishTask {
                         return diff;
                 });
 
-                int initial = 0;
                 int power = 0;
 
-                for(int i=0;i<tasks.length;i++)
-                {
-                        if(power < tasks[i][1])
-                        {
-                                initial+=tasks[i][1]-power;
+                for(int i=0;i<tasks.length;i++) {
+                        if (power < tasks[i][1]) {
                                 power = tasks[i][1];
+                        } else {
+                                power += tasks[i][0];
                         }
-                        power-=tasks[i][0];
                 }
-                return initial;
+                        return power;
         }
 //                HashMap<Integer, Integer> effortRequired = new HashMap<>();
 //                for (int i = 0; i < tasks.length; i++) {
